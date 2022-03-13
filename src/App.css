@@ -1,0 +1,153 @@
+body {
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 20px;
+}
+
+ol, ul {
+	padding-left: 30px;
+}
+
+#table {
+	color: paleturquoise;
+	margin-top: 1%;
+	margin-bottom: 10%;
+}
+
+.board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+
+}
+
+.aliveTd {
+	color: lightgreen;
+
+}
+
+.deadTd {
+
+	color: darkblue;
+}
+
+td {
+	display: inline-flex;
+	height: 15px;
+	width: 15px;
+
+}
+
+
+.board {
+	background-color: azure;
+	margin: auto;
+
+}
+
+.square {
+
+	border: 1px solid #999;
+
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	background-color: red;
+
+}
+
+.square:focus {
+	outline: none;
+
+}
+
+.square:hover {
+	background-color: #90b2d8;
+}
+
+.kbd-navigation .square:focus {
+	background: rgb(231, 163, 163);
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-info {
+	margin-left: 20px;
+}
+
+input[type=number] {
+	width: 50%;
+	padding: 1%;
+	margin: 8px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+}
+
+button[type=submit] {
+
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 2%;
+	
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+
+button[type=submit]:hover {
+	background-color: #45a049;
+}
+
+#color-picker {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 2%;
+
+}
+
+h2 {
+	text-align: center;
+	margin:2%;
+}
+
+.buttonsWrap {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+
+
+/* Option buttons */
+
+.buttonsWrap {
+	padding: 1%
+}
+
+
+.resizeButtons {
+	width: 33%;
+}
+
+.playButtons {
+	width: 33%;
+}
+
+.optionsButtons {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
